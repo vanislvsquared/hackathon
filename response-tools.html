@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="stylesheet" href="style.css">
+
+<title>Choose Your Creation Tool</title>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="topbar">
+
+<h1>Prism</h1>
+
+<p>Choose how you want to create your response</p>
+
+</header>
+
+<div id="toolContainer"></div>
+
+<a href="index.html">
+
+<button class="back-btn">
+
+⬅ Back to Formats
+
+</button>
+
+</a>
+
+</div>
+
+<script>
+
+const params =
+new URLSearchParams(window.location.search);
+
+const preferred =
+params.get("format");
+
+const tools = {
+
+text: `
+<div class="card">
+
+<h2>📄 Text Response</h2>
+
+<p>Create written work or organize ideas.</p>
+
+<a href="https://docs.google.com"
+target="_blank">
+
+<button>
+Google Docs
+</button>
+
+</a>
+
+<a href="https://www.mindmeister.com"
+target="_blank">
+
+<button>
+Mind Mapping Tool
+</button>
+
+</a>
+
+</div>
+`,
+
+video: `
+<div class="card">
+
+<h2>🎥 Video Response</h2>
+
+<p>Create presentations or videos.</p>
+
+<a href="https://gamma.app"
+target="_blank">
+
+<button>
+Open Gamma
+</button>
+
+</a>
+
+</div>
+`,
+
+audio: `
+<div class="card">
+
+<h2>🔊 Audio Response</h2>
+
+<p>Create podcasts or spoken responses.</p>
+
+<a href="https://podcastle.ai"
+target="_blank">
+
+<button>
+Open Podcastle
+</button>
+
+</a>
+
+</div>
+`,
+
+graphic: `
+<div class="card">
+
+<h2>🖼 Graphic Response</h2>
+
+<p>Create visual explanations.</p>
+
+<a href="https://www.canva.com"
+target="_blank">
+
+<button>
+Open Canva
+</button>
+
+</a>
+
+</div>
+`
+
+};
+
+const order = [
+"text",
+"audio",
+"video",
+"graphic"
+];
+
+const sorted = [
+
+preferred,
+
+...order.filter(
+x => x !== preferred
+)
+
+];
+
+const container =
+document.getElementById("toolContainer");
+
+sorted.forEach(tool => {
+
+container.innerHTML += tools[tool];
+
+});
+
+</script>
+
+</body>
+
+</html>
