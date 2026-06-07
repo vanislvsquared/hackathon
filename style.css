@@ -209,6 +209,28 @@ button:hover{
     0 2px 10px rgba(0,0,0,.15);
 }
 
+/* =========================
+   RESPONSE TOOL PAGE 
+========================= */
+
+#toolContainer{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+}
+
+#toolContainer .card{
+
+text-align:center;
+}
+
+#toolContainer button{
+
+margin:10px;
+}
 
 /* =========================
    RESPONSIVE
