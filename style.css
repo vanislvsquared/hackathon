@@ -8,6 +8,7 @@ body{
     padding:40px;
     background:#f4f6fb;
     color:#333;
+    text-align:center;   /* Centers text globally */
 }
 
 .container{
@@ -37,7 +38,6 @@ button:hover{
 ========================= */
 
 .topbar{
-    text-align:center;
     margin-bottom:35px;
 }
 
@@ -48,7 +48,6 @@ button:hover{
 
 .topbar p{
     color:#666;
-    margin-top:0;
 }
 
 /* =========================
@@ -66,52 +65,49 @@ button:hover{
 
     border-radius:12px;
 
-    margin-bottom:25px;
+    margin:25px auto;
 
     box-shadow:
     0 2px 8px rgba(0,0,0,.08);
+
+    max-width:800px;
 }
 
 /* =========================
-   TEXT PAGE STYLES
+   TEXT PAGE
 ========================= */
 
 .text-page .highlight{
-
     background:#fff2a8;
-
     padding:2px 6px;
-
     border-radius:4px;
-
     font-weight:bold;
 }
 
 .text-page .date-box{
-
     background:#dceeff;
-
     padding:6px 10px;
-
     border-radius:6px;
-
     font-weight:bold;
 }
 
 .text-page .task-box{
-
     border-left:8px solid #4b7bec;
 }
 
 .text-page .reminder{
-
     border-left:8px solid #27ae60;
 }
 
-.text-page ul li{
+/* Keep list text readable */
 
+.text-page ul{
+    text-align:left;
+    display:inline-block;
+}
+
+.text-page li{
     margin-bottom:14px;
-
     line-height:1.6;
 }
 
@@ -120,13 +116,14 @@ button:hover{
 ========================= */
 
 .audio-page .audio-card{
-
     text-align:center;
 }
 
 .audio-page audio{
 
-    width:100%;
+    width:350px;       /* fixed size */
+
+    max-width:90%;     /* mobile friendly */
 
     margin-top:20px;
 }
@@ -137,7 +134,9 @@ button:hover{
 
 .video-page video{
 
-    width:100%;
+    width:700px;
+
+    max-width:100%;
 
     border-radius:10px;
 }
@@ -147,11 +146,12 @@ button:hover{
 ========================= */
 
 .graphic-page .graphic-card{
-
     text-align:center;
 }
 
 .graphic-img{
+
+    width:700px;
 
     max-width:100%;
 
@@ -166,9 +166,7 @@ button:hover{
 ========================= */
 
 .back-btn{
-
     background:#4b7bec;
-
     color:white;
 }
 
@@ -179,17 +177,18 @@ button:hover{
 @media (max-width:700px){
 
 body{
-
     padding:20px;
 }
 
 .topbar h1{
-
     font-size:32px;
 }
 
 button{
+    width:100%;
+}
 
+.audio-page audio{
     width:100%;
 }
 
