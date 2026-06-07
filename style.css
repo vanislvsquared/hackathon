@@ -39,6 +39,153 @@ button:hover{
 }
 
 /* =========================
+   LANDING PAGE
+========================= */
+
+.landing-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:85vh;
+}
+
+.logo-placeholder{
+
+    width:140px;
+
+    height:140px;
+
+    border:3px dashed #999;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:25px;
+
+    background:white;
+
+    color:#777;
+
+    font-weight:bold;
+}
+
+.prism-title{
+
+    font-size:72px;
+
+    margin-bottom:10px;
+
+    color:#2d3a66;
+}
+
+.subtitle{
+
+    max-width:700px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+    line-height:1.5;
+}
+
+.landing-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:16px;
+
+    box-shadow:
+    0 4px 14px rgba(0,0,0,.08);
+
+    width:90%;
+
+    max-width:850px;
+}
+
+.landing-card h2{
+
+    margin-top:0;
+}
+
+textarea{
+
+    width:100%;
+
+    min-height:220px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    padding:20px;
+
+    font-size:16px;
+
+    resize:vertical;
+
+    box-sizing:border-box;
+
+    margin-top:15px;
+}
+
+.translate-btn{
+
+    margin-top:25px;
+
+    background:#4b7bec;
+
+    color:white;
+
+    font-size:18px;
+
+    padding:14px 28px;
+}
+
+.translate-btn:hover{
+
+    transform:translateY(-2px);
+}
+
+/* Mobile */
+
+@media (max-width:700px){
+
+.prism-title{
+
+    font-size:48px;
+}
+
+.subtitle{
+
+    font-size:18px;
+}
+
+textarea{
+
+    min-height:180px;
+}
+
+}
+
+/* =========================
    PRISM HEADER
 ========================= */
 
