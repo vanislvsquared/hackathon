@@ -61,10 +61,6 @@ button:hover{
 
     height:140px;
 
-    border:3px dashed #999;
-
-    border-radius:20px;
-
     display:flex;
 
     align-items:center;
@@ -72,10 +68,6 @@ button:hover{
     justify-content:center;
 
     margin-bottom:25px;
-
-    background:white;
-
-    color:#777;
 
     font-weight:bold;
 }
